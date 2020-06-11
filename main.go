@@ -34,5 +34,8 @@ func main() {
 		global.File2Bin(binPath)
 	}
 
-	fmt.Println("创建gin：", gin)
+	//
+	if gin !=""{
+		global.CreateGin(gin)
+	}
 }

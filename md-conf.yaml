@@ -1,7 +1,7 @@
 db:
   mysql:
-    name: aa
+    name: gobk
     user: root
-    password: "123"
+    password: "111"
     server: 127.0.0.1
     port: 3333
