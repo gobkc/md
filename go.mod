@@ -1,4 +1,4 @@
-module md
+module github.com/gobkc/md
 
 go 1.14
 
