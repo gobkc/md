@@ -2,8 +2,8 @@ package global
 
 import (
 	"fmt"
+	"github.com/gobkc/md/gin"
 	"io/ioutil"
-	"md/gin"
 	"os"
 	"path"
 )
