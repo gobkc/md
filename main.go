@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
+	"github.com/gobkc/md/global"
+	"github.com/gobkc/md/initialization"
 	"log"
-	"md/global"
-	"md/initialization"
 )
 
 func main() {
@@ -17,7 +17,7 @@ func main() {
 		//读取配置文件中的数据库链接信息
 		db := global.ReadYaml().Db.Mysql
 		dbConn = fmt.Sprintf("%s:%s@%s:%d/%s", db.User, db.Password, db.Server, db.Port, db.Name)
-	}else{
+	} else {
 		//命令行已经输入数据，覆盖配置文件的数据
 		global.WriteYaml(dbConn)
 	}
@@ -35,7 +35,7 @@ func main() {
 	}
 
 	//
-	if gin !=""{
+	if gin != "" {
 		global.CreateGin(gin)
 	}
 }
